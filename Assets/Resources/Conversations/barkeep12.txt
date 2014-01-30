@@ -1,0 +1,40 @@
+conversation_name=barkeep12
+
+START_VARS
+speaker1=man1b
+speaker2=man3b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=9
+speaker=Sebastian Zielinski
+text=You let my boy die.
+speaker = Michael Kowalski
+text=How dare you.  You kicked your boy out of the house.
+speaker=Sebastian Zielinski
+text= The community should have taken care of him.
+speaker=Michael Kowalski
+text=No way.  You had the resources.  You beat the boy when he went near your door.
+speaker=Sebastian Zielinski
+text=His mother was in a bad way.  I didn't want him to see that.
+speaker=Michael Kowalski
+text=You could have just told him that.
+speaker=Sebastian Zielinski
+text=You think the Nazis will teach him with words?  I teach him to expect blows, he won't expect anything else.
+speaker=Michael Kowalski
+text=That is one hard perspective on life.  Whatever happened to childhood innocence?
+speaker=Sebastian Zielinski
+text= Try explaining childhood innocence to the kids sent to the concentration camps.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+ 
+

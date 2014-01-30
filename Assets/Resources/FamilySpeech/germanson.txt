@@ -1,0 +1,18 @@
+START
+T=I want a toy!
+T=Do you want to play with me?
+END=HEALTHY
+
+START
+T=I'm coooold!
+END=COLD
+
+START
+T=I want food now!.
+T=Where is my dinner?
+END=HUNGRY
+
+START
+T=I don't feel too good...
+T=Mommy says I need some medicine?
+END=SICK

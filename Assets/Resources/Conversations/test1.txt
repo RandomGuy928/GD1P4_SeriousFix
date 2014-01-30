@@ -1,0 +1,133 @@
+conversation_name=test_conversation1
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=2
+speaker=Other dude
+text=This is the first node.
+speaker=SOMEGUY
+text=Node 1 part 2.
+target=respondnode
+END_NODE
+
+START_NODE
+node=respondnode
+type=respond
+text_count=3
+text=Go back to node 1.
+target=START
+text=responseception
+target=itemfinder
+text=Hit the final node.
+target=listenend
+END_NODE
+
+START_NODE
+node=itemfinder
+type=find_item
+text_count=2
+target=founditem
+target=needitem_listen
+END_NODE
+
+START_NODE
+node=founditem
+type=listen_random
+text_count=5
+speaker=Jesus
+text=I would like to buy this here <ITEM>.
+text=Yo, gimmesumadis <ITEM>.
+text=EXTERMINATE <ITEM>
+text=SHUT UP AND TAKE MY MONEY!!! <ITEM>
+text=Please permit me to purchase this <ITEM> at your store.
+target=barternode1
+END_NODE
+
+START_NODE
+node=needitem_listen
+type=listen_random
+text_count=4
+speaker=Zeus
+text=I'd like something <GOAL>.
+text=Could you get me something <GOAL>?
+text=I require <GOAL> food.
+text=I think something <GOAL> would go well with my cheeses
+target=needitem
+END_NODE
+
+START_NODE
+node=needitem
+type=need_item
+text_count=2
+target=barternode1
+target=fail2
+END_NODE
+
+START_NODE
+node=barternode1
+type=barter
+text_count=2
+target=success
+target=fail1
+END_NODE
+
+START_NODE
+node=success
+type=listen_random
+text_count=3
+speaker=Bahamut
+text=Yippie!
+text=YOU'VE ACTIVATED MY TRAP CARD!
+text=I'm so happy right now!
+target=end
+END_NODE
+
+START_NODE
+node=fail1
+type=listen_random
+text_count=3
+speaker=Easter Bunny
+text=What am I, made of money?
+text=The price of this bread is too damn high!
+text=Get off my lawn, sunny.
+target=barternode2
+END_NODE
+
+START_NODE
+node=barternode2
+type=barter
+text_count=2
+target=success
+target=fail2
+END_NODE
+
+START_NODE
+node=fail2
+type=listen_random
+text_count=2
+speaker=0.0
+text=You sicken me with your prices.
+text=May the Grandmapocalypse end you!
+target=end
+END_NODE
+
+START_NODE
+node=listenend
+type=listen
+speaker=Cthulhu
+text=There's absolutely nothing wrong with my cheeses.  Now get out of here!
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

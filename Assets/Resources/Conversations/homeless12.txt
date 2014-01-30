@@ -1,0 +1,88 @@
+conversation_name=homeless12
+
+START_VARS
+speaker1=man1b
+speaker2=homelessb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=8
+speaker= Pietr Zielinski
+text=Hello again, mister.
+speaker=Michael Kowalski
+text=Hey there.  Your father still hasn't let up?
+speaker= Pietr Zielinski
+text=No sir, Sebastian beat me when I tried to go home last night.
+speaker=Michael Kowalski
+text=And your mother didn't say anything?
+speaker=Pietr Zielinski
+text=I didn't see her, but I could hear her crying in another room.  Dad's been in a pretty bad mood recently.
+speaker=Pietr Zielinski
+text=Those guys from the government keep coming into the bar and interrogating his customers.
+speaker=Michael Kowalski
+text=I'm sorry, kid.
+speaker= Pietr Zielinski
+text=Can you give me a bite to eat?
+target=homeless12
+END_NODE
+
+START_NODE
+node=homeless12
+type=respond
+text_count=2
+text=No, I'm afraid not.
+target=homelessb121
+text=I don't see why not.
+target=buyhomeless3
+END_NODE
+
+START_NODE
+node=buyhomeless3
+type=need_item
+text_count=2
+target=homelessb122
+target=homelessb121
+END_NODE
+
+START_NODE
+node=homelessb122
+left=speaker1
+right=speaker2
+type=listen
+text_count=1
+speaker=Pietr Zielinski
+text= Thank you so much!
+target=end
+END_NODE
+
+START_NODE
+node=homelessb121
+left=speaker1
+right=speaker2
+type=listen
+text_count=8
+speaker= Pietr Zielinski
+text=But why not?  It’s cold and I’m hungry and I just want a roll or something!
+speaker=Michael Kowalski
+text=Customers are scared everywhere, kid, not just your dad’s bar.  People are staying at home until this blows over.
+speaker= Pietr Zielinski
+text=What am I supposed to do?
+speaker=Michael Kowalski
+text=Try Father Mazur.  He might have something for you.
+speaker= Pietr Zielinski
+text=I don’t like him though.  He’s always talking bad about people behind their back.
+speaker=Michael Kowalski
+text=Well, listening to him being judgmental is better than starving, isn’t it?
+speaker= Pietr Zielinski
+text=Yeah, I suppose so.  Thanks for the advice!
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

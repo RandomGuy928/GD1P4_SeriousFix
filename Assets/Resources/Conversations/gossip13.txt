@@ -1,0 +1,41 @@
+conversation_name=gossip13
+
+START_VARS
+speaker1=man1b
+speaker2=gossipb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=11
+text=Michael, how are you doing?
+speaker=Dorota Nowak
+text=Managing.  Finances are a bit tight, but that was to be expected.
+speaker=Dorota Nowak
+text=How are your guests?
+speaker=Michael Kowalski
+text=I haven’t had any complaints.
+speaker=Dorota Nowak
+text=Any regrets?
+speaker=Michael Kowalski
+text=Not particularly.  I expect our uniformed visitors are putting a lot of pressure on you.
+speaker=Dorota Nowak
+text=I’ve been giving them so many stories, I don’t think the lawyer trusts himself to tell truth from lie.
+speaker=Michael Kowalski
+text=That might explain his latest initiative.
+speaker=Dorota Nowak
+text=You mean the door to door interrogating?
+speaker=Michael Kowalski
+text=Yeah.  He needs to widen his witness pool.
+speaker=Dorota Nowak
+text=Makes sense.  Let me know if you need help.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

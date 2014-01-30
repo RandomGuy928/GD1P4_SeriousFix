@@ -1,0 +1,83 @@
+conversation_name=homeless4
+
+START_VARS
+speaker1=man1b
+speaker2=homelessb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=11
+speaker = Pietr Zielinski
+text=Hi, Mr. Kowalski.
+speaker=Michael Kowalski
+text=Oh, hi Pietr.  How are you doing?
+speaker = Pietr Zielinski
+text=Not too good.
+speaker=Michael Kowalski
+text=What’s the matter?
+speaker = Pietr Zielinski
+text=Went home yesterday…Mom didn’t even know who I was.
+speaker=Michael Kowalski
+text=Was your father home?
+speaker = Pietr Zielinski
+text=No, he wasn’t home.
+speaker=Michael Kowalski
+text=Thank goodness for small mercies.  Did she turn you away at the door?
+speaker = Pietr Zielinski
+text=She thought I was a beggar.
+speaker=Michael Kowalski
+text=I see.  So what can I do for you?
+speaker = Pietr Zielinski
+text=Well…I don't really have anywhere to go.  And I need food.
+target=homeless1
+END_NODE
+
+START_NODE
+node=homeless1
+type=respond
+text_count=2
+text=I suppose I can give you something...
+target=buyhomeless2
+text=Well, I certainly can't help you.
+target=homelessb23
+END_NODE
+
+START_NODE
+node=buyhomeless2
+type=need_item
+text_count=2
+target=homelessb13
+target=homelessb2
+END_NODE
+
+
+START_NODE
+node=homelessb23
+left=speaker1
+right=speaker2
+type=listen
+text_count=1
+speaker = Pietr Zielinski
+text=Okay...
+target=end
+END_NODE
+
+START_NODE
+node=homelessb13
+left=speaker1
+right=speaker2
+type=listen
+text_count=1
+speaker = Pietr Zielinski
+text=Wow, thanks!
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

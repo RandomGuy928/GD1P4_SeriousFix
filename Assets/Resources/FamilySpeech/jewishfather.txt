@@ -1,0 +1,22 @@
+START
+T=Do you think this war will end the world?
+T=Thank you for letting us stay here.
+T=I hope the shop is doing well.
+END=HEALTHY
+
+START
+T=Is there any chance we can get a heater?
+T=I'm concerned this cold will affect my kids.
+T=Could you please get the heat running?
+END=COLD
+
+START
+T=I would really appreciate some food.
+T=Is there any way you can bring us some food?
+T=I could really use a meal right now.
+END=HUNGRY
+
+START
+T=I am experiencing severe pain in my chest.
+T=Is there any way I could get some medicine?
+END=SICK

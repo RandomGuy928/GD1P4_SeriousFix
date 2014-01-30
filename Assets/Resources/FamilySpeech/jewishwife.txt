@@ -1,0 +1,22 @@
+START
+T=We really appreciate your letting us stay here.
+T=Thank you for giving food and shelter to the kids.
+T=I wish the Nazis could see we are all human.
+END=HEALTHY
+
+START
+T=Rachel is freezing, can we get the heat running?
+T=This cold is getting rather unbearable.
+T=Please get the heat turned on.
+END=COLD
+
+START
+T=I really could use some food right now.
+T=Can you please at least feed the kids.
+T=My stomach feels so empty.
+END=HUNGRY
+
+START
+T=I am feeling quite faint.
+T=I've been throwing up all day?
+END=SICK

@@ -1,0 +1,58 @@
+conversation_name=gossip17
+
+START_VARS
+speaker1=man1b
+speaker2=gossipb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=18
+speaker=Dorota Nowak
+text=Michael, this has passed absurd and is heading rapidly towards dangerous.
+speaker=Michael Kowalski
+text=I have noticed this.
+speaker=Dorota Nowak
+text=You need to do something.  Move them, turn them in, turn yourself in and move them, something, anything, just stop this madness.
+speaker=Michael Kowalski
+text=If I turn them in now, my family and I will likely die for sheltering them as long as we did.
+speaker=Dorota Nowak
+text=Then run, for God’s sake.  Take them with you.  Take Pietr with you too, poor boy has nothing here.
+speaker=Michael Kowalski
+text=You don’t think, in the middle of a Nazi siege, that they might notice eight people leaving where there should only be four?
+speaker=Dorota Nowak
+text=I didn’t want to be the one to tell you…but things have gotten worse.
+speaker=Michael Kowalski
+text=How much worse could it have gotten?
+speaker=Dorota Nowak
+text=They burned down Patryk’s place.  He apparently has been rude to the lawyer on multiple occasions so they are using him as an example.
+speaker=Michael Kowalski
+text=Where is he now?
+speaker=Dorota Nowak
+text=They are holding him hostage until the Jews emerge.
+speaker=Michael Kowalski
+text=Has it even occurred to them that the Jews might have left town long ago?
+speaker=Dorota Nowak
+text=At this point, I think it is about sending the message.  They don’t care if they ever get the Jews- they just want to make it clear how far they are willing to go.
+speaker=Michael Kowalski
+text=Damn.  Alright.  I will certainly think about this.
+speaker=Dorota Nowak
+text=You’ve had plenty of time to think.  You have until tomorrow.  If you haven’t reached a conclusion and acted upon it, I will tell them the truth.
+speaker=Michael Kowalski
+text=That’s a pretty harsh ultimatum, Dorota.
+speaker=Dorota Nowak
+text=I’m sorry, Michael.  Our town can’t take this any longer.  I can’t take this any longer.
+speaker=Dorota Nowak
+text=I recognize that this is in no small part my fault, having brought them to you in the first place.  But now I am going to repair the damage before I lose my home.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+
+

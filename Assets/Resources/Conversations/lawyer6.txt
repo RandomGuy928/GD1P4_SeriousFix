@@ -1,0 +1,74 @@
+conversation_name=lawyer6
+
+START_VARS
+speaker1=man1b
+speaker2=hansb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=3
+speaker=Hans Frank
+text=How is the shop going, Mr. Kowalski?
+speaker=Michael Kowalski
+text=It feeds the family.
+speaker=Hans Frank
+text=And how are we handling our little issue?
+target=lawyer2
+END_NODE
+
+START_NODE
+node=lawyer2
+type=respond
+text_count=2
+text=The poor will help themselves.
+target=lawyerb21
+text=I haven't come up with a solution yet.
+target=lawyerb22
+END_NODE
+
+START_NODE
+node=lawyerb21
+left=speaker1
+right=speaker2
+type=listen
+text_count=5
+speaker=Hans Frank
+text=An admirable notion, Mr. Kowalski, but directly against their nature.
+speaker=Michael Kowalski
+text=How so?
+speaker=Hans Frank
+text=As I said before, they are parasites.  They gorge on the fruits of our hard work without lifting a hand to help themselves.
+speaker=Michael Kowalski
+text=Have you tried an approach like this before?
+speaker=Hans Frank
+text=No.  I will let your plan continue, for now.  It will be our little experiment in human nature.
+target=end
+END_NODE
+
+START_NODE
+node=homelessb22
+left=speaker1
+right=speaker2
+type=listen
+text_count=5
+speaker=Hans Frank
+text=Would you care for a suggestion?
+speaker=Michael Kowalski
+text=I’m listening.
+speaker=Hans Frank
+text=Report any undesirables who pass through your threshold to me.
+speaker=Michael Kowalski
+text=I thought you didn’t like dealing with them.
+speaker=Hans Frank
+text=Oh, I don’t.  But I have associates who do.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

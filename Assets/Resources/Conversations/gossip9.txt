@@ -1,0 +1,108 @@
+conversation_name=gossip9
+
+START_VARS
+speaker1=man1b
+speaker2=oldlady1b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=18
+speaker=Dorota Nowak
+text=Michael, we don’t have much time, you need to listen carefully.
+speaker=Michael Kowalski
+text=I’m listening.
+speaker=Dorota Nowak
+text=You are familiar with Klaudia Grabowski?
+speaker=Dorota Nowak
+text=Yes, the seamstress.  She was just in the other day.  Apparently, she had guests over.
+speaker=Dorota Nowak
+text=Michael…those guests were the Jewish family.
+speaker=Michael Kowalski
+text=Pardon me?
+speaker=Dorota Nowak
+text=Klaudia is, or was, a member of the Polish Underground State.  She has been helping Jews move through our city for years to bring them to freedom.
+speaker=Michael Kowalski
+text=I had no idea.
+speaker=Dorota Nowak
+text=She was very good.  One of the best, in fact.
+speaker=Michael Kowalski
+text=You keep using the past tense.  And why are you bringing all this to my doorstep?
+speaker=Dorota Nowak
+text=They got her, Michael.   The Nazis.
+speaker=Dorota Nowak
+text=They intercepted a letter to her from the next guy down the line, and arrested her within the hour, but they didn’t know where she was keeping the Jews.
+speaker=Michael Kowalski
+text=Okay, so again, why are you bringing this all to my doorstep?  I’m really not one for idle town gossip.
+speaker=Dorota Nowak
+text=That’s exactly why.  I was able to save the Jews- they’re waiting around the corner.
+speaker=DorotaNowak
+text=I need you to keep them in your house.  Before you moved in, someone like Klaudia lived there.  There’s a secret room.
+speaker=Michael Kowalski
+text=Yes, I found it a few years back.  I wondered why it was there; I guess now I know.
+speaker=Dorota Nowak
+text=Please, Michael, I’m begging you- take the Jews.  Let them stay in that room until we can move them safely to their next destination.
+speaker=DorotaNowak
+text=Nobody else has the resources to feed them and such a good hiding spot.
+target=jewsave
+END_NODE
+
+START_NODE
+node=jewsave
+left=speaker1
+right=speaker2
+type=respond
+text_count=2
+text=Absolutely not.  You must be out of your mind.
+target=jewb2
+text=Yes, I don’t suppose I have much of a choice.
+target=jewb1
+END_NODE
+
+START_NODE
+node=jewb2
+left=speaker1
+right=speaker2
+type=listen
+text_count=6
+speaker=Dorota Nowak
+text=For God’s sake, grow a heart.  These people are going to be sent to a concentration camp and die horribly if you don’t help them.
+speaker=Michael Kowalski
+text=Better them than my own family.
+speaker=Dorota Nowak
+text=You honestly believe that?  You would stand by and watch innocents die?
+speaker=Michael Kowalski
+text=So my own, equally innocent family can live?  No question.
+speaker=Dorota Nowak
+text=You’re a cruel man, Michael Kowalski.
+speaker=Michael Kowalski
+text=No, I’m a realist.  Life is hard, Dorota.  Tough decisions have to be made.  And this is one I will make without hesitation.	
+target=end
+END_NODE
+
+START_NODE
+node=jewb1
+left=speaker1
+right=speaker2
+type=listen
+text_count=5
+speaker=Dorota Nowak
+text=Thank you.
+speaker=Michael Kowalski
+text=I hope you know where they are supposed to get to from here?
+speaker=Dorota Nowak
+text=Yes, there’s a family a few miles west who can hold them for a few days.
+speaker=Dorota Nowak
+text=I was thinking you could hide them under a cloth in one of the wagons you use to get grain from the farms.
+speaker=Michael Kowalski
+text=Sounds possible.  Bring them in; I’ll do what I can.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

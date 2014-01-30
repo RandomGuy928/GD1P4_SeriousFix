@@ -1,0 +1,51 @@
+conversation_name=butcher16
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=15
+speaker= Patryk Jankowski
+text=Michael, how do you have so many customers?  Even my regulars are reluctant to come.
+speaker=Michael Kowalski
+text=People need to eat somehow.  Besides, I appear to have special status, thanks to the lawyer who is running the operation.
+speaker= Patryk Jankowski
+text=That crazy guy?  I told him to leave my store and never come back.  Idiot tried to tell me how to run my own business.
+speaker=Michael Kowalski
+text=I see that as usual, you miss the irony of that particular decision.
+speaker= Patryk Jankowski
+text=Whatever.  This needs to end.  I barely got enough money today for a loaf of bread.
+speaker=Michael Kowalski
+text=I agree that this situation is untenable.  I’m not sure what we can do about it though.
+speaker= Patryk Jankowski
+text=I don’t know…I was hoping you’d have another brilliant idea.
+speaker=Michael Kowalski
+text=Oh right, I had forgotten about that.  How did the list thing go?
+speaker= Patryk Jankowski
+text=Eh.  It didn’t, really.
+speaker=Michael Kowalski
+text=What went wrong?
+speaker= Patryk Jankowski
+text=Turns out Father Mazur doesn’t trust many people generally, and this situation only has made that worse.
+speaker=Michael Kowalski
+text=So the list was too long?
+speaker= Patryk Jankowski
+text=That and it changed every day.  I just don’t know, Michael- what can we do about this?  There’s got to be something.
+speaker=Michael Kowalski
+text=I promise, one way or another, this will be resolved in a day or two.
+speaker= Patryk Jankowski
+text=I really hope so.  I’m pretty sure the town’s future depends on it.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+

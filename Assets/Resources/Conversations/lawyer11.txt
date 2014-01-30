@@ -1,0 +1,41 @@
+conversation_name=lawyer11
+
+START_VARS
+speaker1=man1b
+speaker2=hansb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=9
+speaker=Hans Frank
+text=Good afternoon.
+speaker=Michael Kowalski
+text=Oh, hello.  How’s the lawyering going?
+speaker=Hans Frank
+text=I’ve had better days.  I presume you are aware of the current Jew conundrum?
+speaker=Michael Kowalski
+text=I know the basics.  Pity about the Grabowski family, I never would have thought it of them.
+speaker=Hans Frank
+text=Anyways, my men and I are visiting all your homes to deliver a reminder.
+speaker=Michael Kowalski
+text=And what might that be?
+speaker=Hans Frank
+text=If you are sheltering the Jews, we strongly recommend you stop, for your sake.
+speaker=Michael Kowalski
+text=That seems obvious.  I wasn’t exactly expecting you to encourage hiding them.
+speaker=Hans Frank
+text=I’m running out of patience with this town and that includes you.  Keep your jokes for someone else.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+
+
+

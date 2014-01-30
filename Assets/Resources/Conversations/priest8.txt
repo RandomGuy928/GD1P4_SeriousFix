@@ -1,0 +1,54 @@
+conversation_name=priest8
+
+START_VARS
+speaker1=man1b
+speaker2=priestb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=17
+speaker=Father Mazur
+text=Michael, hello, how are you doing today?
+speaker=Michael Kowalski
+text=Not bad, Father.  And yourself?
+speaker=Father Mazur
+text=I am doing well, thanks for asking.  How is your business doing?
+speaker=Michael Kowalski
+text=We’re keeping out of the red, with effort.
+speaker=Father Mazur
+text=And your family?  I haven’t seen you in church since young Aleksy was born.
+speaker=Michael Kowalski
+text=Julia and the kids are doing well. Sorry to miss your services, but Sunday baking is crucial.
+speaker=Father Mazur
+text=I understand; such are the burdens of this earthly life we live.
+speaker=Michael Kowalski
+text=And how is the church faring in my absence?
+speaker=Father Mazur
+text=We trudge on, though my heart is heavy.
+speaker=Michael Kowalski
+text=What’s wrong, Father?
+speaker=Father Mazur
+text=A family living in sin is being sheltered in this town even now.
+speaker=Michael Kowalski
+text=I’m not sure I follow you there.
+speaker=Father Mazur
+text=The Jewish infestation of Eastern Europe is being brought even into our own small town.
+speaker=Michael Kowalski
+text=Really?
+speaker=Father Mazur
+text=Yes, and it is our sacred duty as Catholics to stomp it out before it spreads.
+speaker=Michael Kowalski
+text=And how are you proposing to accomplish that?
+speaker=Father Mazur
+text=If you know where they are, for the love of God, report them to the government.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

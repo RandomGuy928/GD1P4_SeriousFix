@@ -1,0 +1,57 @@
+conversation_name=gossip19
+
+START_VARS
+speaker1=man1b
+speaker2=gossipb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=11
+speaker=Dorota Nowak
+text=Michael, good news!
+speaker=Michael Kowalski
+text=That would be welcome right around now.
+speaker=Dorota Nowak 
+text=One of the Nazi guards approached me earlier- I guess he’s some kind of undercover agent.  He’ll give us an opening to escape town.
+speaker=Michael Kowalski
+text=Fantastic!  But why did he wait this long to tell us?
+speaker=Dorota Nowak 
+text=He needed confirmation from the next family that they were ready.  No point revealing himself and risking exposure until it was necessary.
+speaker=Michael Kowalski
+text=We’ll need to move the Jews tonight.  Tomorrow, they plan to move the whole town to Auschwitz.
+speaker=Dorota Nowak 
+text=What?  But that’s terrible.  We can’t possibly all escape.
+speaker=Michael Kowalski
+text=I know.  You need to guide the Jews to their next stop.
+speaker=Dorota Nowak 
+text=But what about you?
+speaker=Michael Kowalski
+text=We’ll survive.  One way or another.  Maybe we’ll see you, when this hell ends.
+speaker=Dorota Nowak
+text=I’ll make this worthwhile.  I’ll join the resistance, save every life that I can.  And I’ll tell people how you helped.
+target=finalendingchoice
+END_NODE
+
+START_NODE
+node=finalendingchoice
+left=speaker1
+right=speaker2
+type=respond
+text_count=2
+text= Thank you.  If I'm going to die, might as well be in a blaze of glory.
+target=end
+text=Better not to.  As far as I can tell, the Nazis don’t know what I did.  If you spread the word, my family and I will be killed.  But thanks.  And good luck.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+
+
+

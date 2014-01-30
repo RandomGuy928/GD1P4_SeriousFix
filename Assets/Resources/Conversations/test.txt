@@ -1,0 +1,72 @@
+conversation_name=test_conversation
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=6
+speaker=Michael Kowalski
+text=Pietr, what are you doing here?
+speaker=Pietr Zielinski
+text=Please, do you have any spare bread?
+speaker=Michael Kowalski
+text=Have you used up your food ration for the week?
+speaker=Pietr Zielinski
+text=The food at the general store is stale and always the same.
+speaker=Michael Kowalski
+text=These are hard times for everyone, Pietr.  Be grateful you can get anything at all.
+speaker=Pietr Zielinski
+text=Mr. Kowalski, I’m begging you.  One roll, just to remember what fresh baked bread tastes like.
+target=homeless1
+END_NODE
+
+START_NODE
+node=homeless1
+type=respond
+text_count=2
+text=Oh, alright, just this once.
+target=homelessb1
+text=I can't, Pietr.
+target=homelessb2
+END_NODE
+
+START_NODE
+node=homelessb1
+left=speaker1
+right=speaker2
+type=listen
+text_count=2
+speaker=Pietr Zielinski
+text=Thank you, thank you so much.
+speaker=Michael Kowalski
+text=Now get out of here, I have a business to run.
+target=end
+END_NODE
+
+START_NODE
+node=homelessb2
+left=speaker1
+right=speaker2
+type=listen
+text_count=4
+speaker=Pietr Zielinski
+text=Not even one roll for a starving homeless boy?
+speaker=Michael Kowalski
+text=I give you a roll, my kids don’t eat tonight.
+speaker=Pietr Zielinski
+text=Please, just a scrap, it’s so cold out and the food would help me through night.
+speaker=Michael Kowalski
+text=Get out of here, Pietr.  You're holding up the line.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

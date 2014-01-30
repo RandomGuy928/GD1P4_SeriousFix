@@ -1,0 +1,20 @@
+START
+T=I'm very healthy.  Definitely nothing wrong with me.
+T=Alot is my favorite animal.
+T=Daddy, did you acquire Jews for your business today?
+END=HEALTHY
+
+START
+T=I am very cold.
+END=COLD
+
+START
+T=I am extraordinarily hungry.
+T=GIVE ME FOOD.
+T=I require sustenance.
+END=HUNGRY
+
+START
+T=Ughblahhhhhhhhhhhhhh...
+T=*pukes*
+END=SICK

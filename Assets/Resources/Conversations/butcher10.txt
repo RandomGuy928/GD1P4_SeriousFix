@@ -1,0 +1,50 @@
+conversation_name=butcher10
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=15
+speaker= Patryk Jankowski
+text=Have you heard the news?
+speaker=Michael Kowalski
+text=No, that’s what I have you and Dorota for.
+speaker= Patryk Jankowski
+text=It’s crazy- Marta and her whole family were taken in for questioning by the Nazis.
+speaker=Michael Kowalski
+text=Whatever for?
+speaker= Patryk Jankowski
+text=Apparently they were hiding Jews.
+speaker=Michael Kowalski
+text=So why questioning?  If they were hiding Jews, isn’t that the death sentence?
+speaker= Patryk Jankowski
+text=That’s why this is so crazy!  The Jews got away.
+speaker=Michael Kowalski
+text=Now that’s not something you hear every day.  The Jews escaped the house ransack and everything?
+speaker= Patryk Jankowski
+text=Yep.  And the best part is, nobody knows where they are.
+speaker=Michael Kowalski
+text=Someone always knows.  You just have to ask the right person at the right time.
+speaker= Patryk Jankowski
+text=You got any ideas on who they should ask?
+speaker=Michael Kowalski
+text=Not particularly.  The Father stopped by here recently with a rant against Jews.
+speaker= Patryk Jankowski
+text=He’s been going on and on about that in services too.
+speaker=Michael Kowalski
+text=Maybe you could ask him for a list of people he doesn’t trust?
+speaker= Patryk Jankowski
+text=That’s a great idea!  Thanks, Michael, I can always rely on you for good advice.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

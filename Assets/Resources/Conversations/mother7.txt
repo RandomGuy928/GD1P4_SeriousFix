@@ -1,0 +1,80 @@
+conversation_name=mother7
+
+START_VARS
+speaker1=man1b
+speaker2=oldlady1b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=4
+speaker=Michael Kowalski
+text=Klaudia, how is the family?
+speaker = Klaudia Grabowski
+text=Very good, thank you.
+speaker=Michael Kowalski
+text=And what can I get for you today?
+speaker = Klaudia Grabowski
+text=1 entree, please.
+target=buymother1
+END_NODE
+
+START_NODE
+node=buymother1
+type=need_item
+text_count=2
+target=bartermother
+target=mother8
+END_NODE
+
+START_NODE
+node=bartermother
+type=barter
+text_count=2
+target=mother7
+target=mother8
+END_NODE
+
+START_NODE
+node=mother7
+left=speaker1
+right=speaker2
+type=listen
+text_count=4
+speaker=Michael Grabowski
+text=Got plans for the evening?
+speaker=Klaudia Grabowski
+text=We have some guests over from out of town.
+speaker=Michael Kowalski
+text=Sounds like fun.  Are they family?
+speaker=Klaudia Grabowski
+text=No, just guests.  I need to go now; thank you for the food.
+target=end
+END_NODE
+
+START_NODE
+node=mother8
+left=speaker1
+right=speaker2
+type=listen
+text_count=4
+speaker=Michael Grabowski
+text=I'm sorry, I don't have that in stock.
+speaker=Klaudia Grabowski
+text=I really need that food- is there anything you can do?
+speaker=Michael Kowalski
+text=No, I'm afraid that I just don't have any available.
+speaker=Klaudia Grabowski
+text=Darn.  I really needed that too, people are depending on me.  Thanks anyways.
+target=end
+END_NODE
+
+
+
+START_NODE
+node=end
+type=end
+END_NODE

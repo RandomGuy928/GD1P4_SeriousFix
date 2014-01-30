@@ -1,0 +1,42 @@
+conversation_name=soldier14
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=11
+speaker=Sebastian Zielinsky
+text=Michael, these Nazis are insane!
+speaker=Michael Kowalski
+text=They do seem a bit obsessive.
+speaker=Sebastian Zielinsky
+text=These crazy assholes are charging into my bar every night and interrogating my patrons.
+speaker=Michael Kowalski
+text=I can only imagine your frustration.
+speaker=Sebastian Zielinsky
+text=They don’t even bother to buy a drink for their troubles.
+speaker=Michael Kowalski
+text=A true affront to decency.
+speaker=Sebastian Zielinsky
+text=You’re not taking me seriously?  It’s ruining my business!
+speaker=Michael Kowalski
+text=We’re all in the same situation.  Just keep your head down and wait for things to blow over.
+speaker=Sebastian Zielinsky
+text=But what if they don’t?  What if the Jews never show up?
+speaker=Michael Kowalski
+text=They will, sooner or later.  They must.  Where can they possibly hide such that the Nazis can’t find them?
+speaker=Sebastian Zielinsky
+text=I don’t know.  But something needs to be done, sooner rather than later.  This situation is intolerable.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

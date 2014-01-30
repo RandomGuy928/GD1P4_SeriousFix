@@ -1,0 +1,23 @@
+START
+T=Welcome home, honey.
+T=Did you have a good day?
+T=Good to have you home, dear.
+END=HEALTHY
+
+START
+T=We really need to get the heater running.
+T=Why did you not pay for the heater?
+T=It is far too cold in here.
+END=COLD
+
+START
+T=The kids are starving.
+T=I could really use some food.
+T=You need to make sure we have food on the table tomorrow.
+END=HUNGRY
+
+START
+T=I'm feeling very nauseous.
+T=I have a severe head ache
+T=Can you buy me some medicine?
+END=SICK

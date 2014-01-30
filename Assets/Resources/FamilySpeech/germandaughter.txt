@@ -1,0 +1,23 @@
+START
+T=Daddy, how was your day?
+T=Did you hear?  They bombed London yesterday.
+T=When is this war going to end, Daddy?
+END=HEALTHY
+
+START
+T=Can we turn the heater on?
+T=Daddy, I'm really cold.
+T=Daddy, it's freezing in here.
+END=COLD
+
+START
+T=I'm really hungry, Daddy.
+T=When are we going to have some food?
+T=Daddy, are we going to have dinner tomorrow?
+END=HUNGRY
+
+START
+T=I don't feel too good.
+T=My body hurts, Daddy.
+T=Daddy, I think I need some medicine.
+END=SICK

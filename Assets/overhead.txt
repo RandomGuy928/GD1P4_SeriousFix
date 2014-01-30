@@ -1,0 +1,89 @@
+Day One:
+	Random
+	Random
+	homeless1
+	Random
+	Random
+	lawyer2
+	Random
+	
+Day Two: 
+	Random
+	gossip3
+	Random
+	Random
+	Random
+	homeless4: If the player chooses not to give the boy food here, he dies.  In this case, replace homeless12 with barkeep12.
+	Random
+	
+Day Three:
+	barkeep5
+	Random
+	Random
+	Random
+	lawyer6
+	Random
+	Random
+	
+Day Four: 
+	Random
+	Random
+	mother7
+	Random
+	Random
+	priest8
+	
+Day Five:
+	Random
+	Random
+	Random
+	Random
+	Random
+	Random
+	gossip9: Potential game end
+	
+Day Six:
+	Random
+	butcher10
+	Random
+	Random
+	Random
+	lawyer11
+	Random
+	
+Day Seven:
+	Random
+	Random
+	homeless12: If Give Food to Pietr -> priest15. If Give Don't Give Food to Pietr -> priestalt15.
+	Random
+	Random
+	Random
+	gossip13
+	
+Day Eight: 
+	soldier14
+	Random
+	Random
+	Random
+	priest15
+	Random
+	Random
+	
+Day Nine:
+	Random
+	butcher16
+	Random
+	Random
+	Random
+	Random
+	gossip17
+
+Day Ten:
+	Random
+	Random
+	Random
+	Random
+	Random
+	lawyer18: Potential game end
+	gossip19: Game over
+			

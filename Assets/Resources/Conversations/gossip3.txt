@@ -1,0 +1,44 @@
+conversation_name=gossip3
+
+START_VARS
+speaker1=man1b
+speaker2=gossipb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=12
+speaker = Dorota Nowak
+text=Michael!  How is the bakery business treating you?
+speaker = Michael Kowalski
+text=We’re getting on.
+speaker = Dorota Nowak
+text=Excellent.  And the family?
+speaker = Michael Kowalski
+text=They are well.  Aleksy grows faster every day.
+speaker = Dorota Nowak
+text=You must bring them over one of these days.
+speaker = Michael Kowalski
+text=Of course.  By the way, Pietr stopped by.
+speaker = Dorota Nowak
+text=Did he?
+speaker = Michael Kowalski
+text=Remind Seb it is his responsibility to deal with his family.
+speaker = Dorota Nowak
+text=Seb has made it pretty clear he doesn't care.
+speaker = Michael Kowalski
+text=What about Marta?
+speaker = Dorota Nowak
+text=She’s so far gone in the drink, I doubt she even remembers who he is.
+speaker = Michael Kowalski
+text=Fine, just send Seb to me and I’ll talk to him.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

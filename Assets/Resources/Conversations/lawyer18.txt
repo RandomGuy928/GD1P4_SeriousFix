@@ -1,0 +1,111 @@
+conversation_name=lawyer18
+
+START_VARS
+speaker1=man1b
+speaker2=hansb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=24
+peaker=Hans Frank
+text=Well, Michael, it’s certainly been a rough few days for your little village.
+speaker=Michael Kowalski
+text=I’ll say.  How’s the search for the Jews going?
+speaker=Hans Frank
+text=No headway, sadly.  Not a single lead.
+speaker=Hans Frank
+text=For a tiny town where, according to the delightful Dorota, nothing is secret, you folk are managing to keep that family very well hidden.
+speaker=Michael Kowalski
+text=My wallet is very sorry to hear that and wishes you the best.
+speaker=Hans Frank
+text=And what of your heart?
+speaker=Michael Kowalski
+text=I don’t know.  I’m not sure how I feel about any of this anymore.  I guess you’ve pushed me, and everyone else, pretty hard.
+speaker=Hans Frank
+text=That was the goal.
+speaker=Michael Kowalski
+text=Then I guess you’ve done pretty well.
+speaker=Hans Frank
+text=I’m here to offer you a last chance.
+speaker=Michael Kowalski
+text=Those seem pretty common around here these days.
+speaker=Hans Frank
+text=Be that as it may, we are going to finish making the point we started.
+speaker=Michael Kowalski
+text=How do you plan to do that?  I’d say this town was on its last legs as is.
+speaker=Hans Frank
+text=There won’t be a town anymore.  All residents are being moved to Auschwitz.
+speaker=Michael Kowalski
+text=You’re going to move an entire town to a concentration camp with no evidence that they are doing anything wrong?
+speaker=Hans Frank
+text=Tomorrow, we will be holding a press conference.  It will be announced that the Jews have been found- whether or not they have been is irrelevant.
+speaker=Michael Kowalski
+text=So that’s why you’re doing this- to shut us up.  You don’t expect to find the Jews.
+speaker=Hans Frank
+text=No.  But I am willing to give you a last chance.  You strike me as a kindred spirit.
+speaker=Hans Frank
+text=If you give up the Jews, here and now, this can all end.  No Auschwitz, no lies, you will be spared of all charges.
+speaker=Michael Kowalski
+text=Why would you do that?
+speaker=Hans Frank
+text=Because I believe you will further our cause.
+speaker=Hans Frank
+text=If we can get you, a man clearly stubborn, prideful, and arrogant, to admit that he is hiding the Jews…we can get anyone to do so.
+speaker=Michael Kowalski
+text=I thought you just said I was like you.  If so, you describe yourself pretty harshly.
+speaker=Hans Frank
+text=I am all of those things.  I am also right.  So, will you give them up?  Can you tell us where they are?
+target=lawyer20
+END_NODE
+
+START_NODE
+node=lawyer20
+type=respond
+text_count=2
+text=Fine.  Yes.  God save me.  They’re in a hidden room.
+target=lawyerb1
+text=I'm sorry, I wish I could help you but I can't.
+target=lawyerb2
+END_NODE
+
+START_NODE
+node=lawyerb1
+left=speaker1
+right=speaker2
+type=listen
+text_count=5
+Fine.  Yes.  God save me.  They’re in a hidden room.
+speaker=Hans Frank
+text=And where is the entrance to the hidden room located?
+speaker=Michael Kowalski
+text=The closet next to the kitchen has a false back.
+speaker=Hans Frank
+text=Excellent.  Soldiers!  Arrest this man and his family as traitors and take the Jews into custody.
+speaker=Michael Kowalski
+text=What?  But you told me we would be pardoned.
+speaker=Hans Frank
+text=I lied.  Take him away.
+target=end
+END_NODE
+
+START_NODE
+node=lawyerb2
+left=speaker1
+right=speaker2
+type=listen
+text_count=2
+speaker=Hans Frank
+text=I’m sorry too.  But as I said, we have to finish the point.  Tomorrow, the move will commence.
+speaker=Hans Frank
+text=I recommend you pack up what you can carry.  Soldiers will be around to pick you up at 8am sharp.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

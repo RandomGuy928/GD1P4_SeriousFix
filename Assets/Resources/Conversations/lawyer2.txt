@@ -1,0 +1,48 @@
+conversation_name=lawyer2
+
+START_VARS
+speaker1=man1b
+speaker2=hansb
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=14
+speaker = Hans Frank
+text=Nice business you’re running here, Mr…
+speaker = Michael Kowalski
+text=Kowalski.  Thank you, I do my best.
+speaker = Hans Frank
+text=Indeed, your goods are top notch and your prices are surprisingly low.
+speaker = Michael Kowalski
+text=Well, I’m glad that I am meeting expectations.
+speaker = Hans Frank
+text=I admit a tad of concern about your prices, though.
+speaker = Michael Kowalski
+text=Why is that?
+speaker = Hans Frank
+text=I find that low prices tend to bring in the undesirables.
+speaker = Michael Kowalski
+text=The undesirables?
+speaker = Hans Frank
+text=Poor people, gay people, gypsies, Jews- the list goes on.
+speaker=HansFrank
+text=Inferior parasites who would ride Nazi Germany’s coattails into the greater future we work for while they laze about.
+speaker = Michael Kowalski
+text=And you recommend that I discourage them from shopping here?
+speaker = Hans Frank
+text=Only for your own good, of course.  They always ask for handouts, cheaper deals, more for less.  At first it seems innocent, but it gets worse and worse.
+speaker = Michael Kowalski
+text=Well, thanks for the heads up.
+speaker = Hans Frank
+text=But of course.  I love to see a successful businessman.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

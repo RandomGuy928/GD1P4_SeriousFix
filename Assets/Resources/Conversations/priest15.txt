@@ -1,0 +1,46 @@
+conversation_name=priest15
+
+START_VARS
+speaker1=man1b
+speaker2=man2b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=13
+speaker=Michael Kowalski
+text=Hey, Father, how’s it going?
+speaker=Father Mazur
+text=Not bad, my son.  How is your shop handling these troublesome times?
+speaker=Michael Kowalski
+text=We’re keeping it together.  How’s all of this affecting the church?
+speaker=Father Mazur
+text=My congregation, as always, swells in the face of adversity.
+speaker=Michael Kowalski
+text=Makes sense, people looking to you for guidance when they don’t have the answers.
+speaker=Father Mazur
+text=Our Heavenly Father always provides.
+speaker=Michael Kowalski
+text=Delighted to hear it.
+speaker=Father Mazur
+text=In this case, he has inspired me to bring my flock together to pray that the cruel hearts of the wicked family who hides the Jews are turned back to his light and majesty.
+speaker=Michael Kowalski
+text=Really, now?  Are you having any luck in that endeavor?
+speaker=Father Mazur
+text=Sadly, not as much as I would have liked.  People are hiding in their homes, fearful of meeting an angry Nazi even just in route to the church.
+speaker=Michael Kowalski
+text=That’s a pity.  Well, if you don’t mind, I need to go back to my work.
+speaker=Father Mazur
+text=You cannot return with me to the church?  For you to come, it would be symbolic of the safety I provide.
+speaker=Michael Kowalski
+text=Sorry, Father.  I have a family to feed.  This food won’t sell itself.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE

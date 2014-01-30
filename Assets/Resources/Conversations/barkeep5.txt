@@ -1,0 +1,47 @@
+conversation_name=barkeep5
+
+START_VARS
+speaker1=man1b
+speaker2=man3b
+END_VARS
+
+START_NODE
+node=START
+left=speaker1
+right=speaker2
+type=listen
+text_count=13
+speaker=Sebastian Zielinski
+text=Michael, it’s been too long.  You should have a drink with us one of these days
+speaker=Michael Kowalski
+text=I have a family and a business to take care of, Seb.
+speaker=Sebastian Zielinski
+text=Not like that’s ever stopped me.
+speaker=Michael Kowalski
+text=No, no it hasn’t.  Speaking of which, how’s Pietr?
+speaker=Sebastian Zielinski
+text=Who knows?  Kid hasn’t stopped by in a week.
+speaker=Michael Kowalski
+text=Interesting.  You want to know where he has been?
+speaker=Sebastian Zielinski
+text=Not really.
+speaker=Michael Kowalski
+text=At my place.  Twice now.
+speaker=Sebastian Zielinski
+text=Obviously he likes you.
+speaker=Michael Kowalski
+text=He likes having something to eat, Seb.  He’s starving.
+speaker=Sebastian Zielinski
+text=Then give him food.
+speaker=Michael Kowalski
+text=That’s your job, Seb.
+speaker=Sebastian Zielinski
+text=It’s your conscience, though.
+target=end
+END_NODE
+
+START_NODE
+node=end
+type=end
+END_NODE
+ 
